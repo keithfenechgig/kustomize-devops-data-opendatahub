@@ -6,17 +6,6 @@ metadata:
 data:
   jupyterhub-singleuser-profiles.yaml: |
       profiles:
-      - name: Additional Profile
-      env:
-        - name: ds-dev-pod
-          value: "My Workspace"
-      resources:
-        requests:
-          memory: 1Gi
-          cpu: 1
-        limits:
-          memory: 4Gi
-          cpu: 2
       - name: globals
         env:
           - name: S3_ENDPOINT_URL
@@ -66,27 +55,11 @@ data:
             return:
               SPARK_CLUSTER: 'metadata.name'
       sizes:
-      - name: Small
+      - name: MyEnvironment
         resources:
           requests:
-            memory: 1Gi
+            memory: 2Gi
             cpu: 1
           limits:
-            memory: 2Gi
-            cpu: 2
-      - name: Medium
-        resources:
-          requests:
-            memory: 2Gi
-            cpu: 2
-          limits:
             memory: 4Gi
-            cpu: 4
-      - name: Large
-        resources:
-          requests:
-            memory: 4Gi
-            cpu: 4
-          limits:
-            memory: 8Gi
-            cpu: 8
+            cpu: 2
