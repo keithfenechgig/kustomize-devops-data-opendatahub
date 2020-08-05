@@ -3,8 +3,6 @@ kind: ConfigMap
 metadata:
   name: jupyter-singleuser-profiles
   namespace: data-ds-dev01
-  labels:
-    jupyterhub: singleuser-profiles
 data:
   jupyterhub-singleuser-profiles.yaml: |
       profiles:
