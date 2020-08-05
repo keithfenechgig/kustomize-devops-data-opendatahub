@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: jupyterhub-additional-singleuser-profiles
+  name: jupyter-singleuser-profiles
   namespace: data-ds-dev01
   labels:
     jupyterhub: singleuser-profiles
